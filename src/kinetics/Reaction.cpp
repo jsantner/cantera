@@ -187,14 +187,14 @@ std::string FalloffReaction::productString() const {
     }
 }
 
-void FalloffReaction::validate() {
-    Reaction::validate();
-    if (low_rate.preExponentialFactor() < 0 ||
-        high_rate.preExponentialFactor() < 0) {
-        throw CanteraError("FalloffReaction::validate", "Negative "
-            "pre-exponential factor found for reaction '" + equation() + "'");
-    }
-}
+//void FalloffReaction::validate() {
+//    Reaction::validate();
+//   if (low_rate.preExponentialFactor() < 0 ||
+//        high_rate.preExponentialFactor() < 0) {
+//        throw CanteraError("FalloffReaction::validate", "Negative "
+//            "pre-exponential factor found for reaction '" + equation() + "'");
+//    }
+//}
 
 ChemicallyActivatedReaction::ChemicallyActivatedReaction()
 {
